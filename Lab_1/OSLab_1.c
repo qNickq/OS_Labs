@@ -8,7 +8,7 @@ void atExitFunc(pid_t pid)
     printf("AtExit for process: %d\n" , pid);
 }
 
-int main (int argc , char* argv[])
+int main ()
 { 
     printf("Process with pid: %d has parent with pid: %d\n", getpid(), getppid());
 
@@ -27,4 +27,5 @@ int main (int argc , char* argv[])
       
     atExitFunc(getpid());
     return 0;
+
 }
